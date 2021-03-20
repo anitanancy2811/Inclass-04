@@ -1,0 +1,103 @@
+
+:root {
+	--lavender: #cdb4dbff; 
+	--orchid: #ffc8ddff;
+	 --nadeshiko: #ffafccff; 
+	 --uranian: #bde0feff; 
+	 --blue-eyes: #a2d2ffff;
+}
+
+html {
+	font-size: 62.5%
+}
+
+body {
+	font-family: Arial, Helvetica, san-serif;
+	font-size:1.6rem;
+	background-color: var(--lavender);
+}
+
+header,
+footer {
+	text-align: center;
+	line-height: 3;
+	font-size: 2rem;
+	background-color: var(--nadeshik);
+}
+
+h1 {
+	font-style: 3rem;
+}
+
+main {
+	margin-top: 2rem;
+	padding: 1rem;
+
+}
+
+fieldset {
+	border: none;
+	border-radius: 5px;
+	background-color: var(--blue-eyes);
+	padding: 2%;
+	
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+	width:100%;
+	border:1px solid #666;
+	background-color: var( --uranian);
+	border-radius: 5px;
+}
+
+input[type=submit] {
+	padding: 1.5rem;
+	cursor: pointer;
+	}
+
+input[type=submit]:hover {
+	border:1px solid var( --uranian);
+	color: var( --uranian);
+	background-color: #666;
+}
+
+fieldset > div:last-child {
+	width: 50%;
+	margin: 0 auto;
+}
+textarea {
+	height: 8rem;
+}
+
+fieldset > div {
+	margin-bottom: 1.5rem;
+}
+
+@media only screen(min-width: 700px) {
+	.flex-conatiner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.flex-container > div {
+		flex-basis: 49%;
+	}
+
+	.flex-container > div:nth-last-child(2) {
+		flex-basis: 100%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	main {
+		width: 1000px;
+		margin: 0 auto;
+
+	}
+}
